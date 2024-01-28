@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    width: 25rem;
+    max-width: 25rem;
     padding: 1.563rem 2.188rem;
     position: absolute;
     top: 50%;
@@ -18,6 +18,24 @@ body {
     background: #fff;
     border-radius: 0.625rem;
 }
+
+@media screen and (min-width:320px) {
+    .container{
+        width: 18rem;
+    }
+}
+
+@media screen and (min-width:425px) {
+    .container{
+        width: 20rem;
+    }
+} 
+
+@media screen and (min-width:768px) {
+    .container{
+        width: 30rem;
+    }
+} 
 
 .container p {
     font-weight: 600;
